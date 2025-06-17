@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-Paper-Scissors</title>
+  <link rel="icon" href="images/rock-emoji.png">
+
+  <link rel="stylesheet" href="main.css">
+
+  <!-- load font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <div class="box-container js-box-container">
+      <div class="display-area js-display-area">
+      </div>
+      <div class="score-area">
+        <p class="js-score-area">Win: 0 Loss: 0 Tie: 0</p>
+      </div>
+      <div class="text-info">
+        <p>Pick Your Move</p>
+      </div>
+      <div class="buttons">
+        <button class="button-primary js-move-button" data-move="rock">
+          <img src="images/rock-emoji.png" alt="rock hand img">
+        </button>
+        <button class="button-primary js-move-button" data-move="paper">
+          <img src="images/paper-emoji.png" alt="paper hand img">
+        </button>
+        <button class="button-primary js-move-button" data-move="scissors">
+          <img src="images/scissors-emoji.png" alt="scissors hand img">
+        </button>
+      </div>
+      <div class="other-buttons js-other-buttons">
+        <button class="button-secondary js-reset-button">Reset</button>
+        <button class="button-secondary js-auto-play-button">Auto Play</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>
