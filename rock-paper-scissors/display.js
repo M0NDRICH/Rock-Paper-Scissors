@@ -89,7 +89,7 @@ function getResult(param){
       result = 'You Win!';
       break;
     case 'loss':
-      result = 'You Loss!';
+      result = 'You Lose!';
       break;
     case 'tie':
       result = 'It\'s a Tie!';
