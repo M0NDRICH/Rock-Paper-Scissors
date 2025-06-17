@@ -46,7 +46,7 @@ function executeGame(playerMove, computerMove){
         displayModule.renderScore();
         break;
       case 'paper':
-        result = 'loss';
+        result = 'lose';
         displayModule.score.loss++;
         displayModule.renderScore();
         break;
@@ -71,7 +71,7 @@ function executeGame(playerMove, computerMove){
         displayModule.renderScore();
         break;
       case 'scissors':
-        result = 'loss';
+        result = 'lose';
         displayModule.score.loss++;
         displayModule.renderScore();
         break;
@@ -81,7 +81,7 @@ function executeGame(playerMove, computerMove){
   } else if(playerMove === 'scissors'){
     switch(computerMove){
       case 'rock':
-        result = 'loss';
+        result = 'lose';
         displayModule.score.loss++;
         displayModule.renderScore();
         break;
